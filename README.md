@@ -219,10 +219,13 @@ The dataset contains synthetic practice observations and uses a single
 small holdout test set. Therefore, the results should not be considered
 evidence of causation or deployment readiness.
 
-## Video Explanation
+## 🎥 Project Explanation Video
 
-**Video Link:** [Add Your Video Link]  
-**Duration:** [Add Video Duration]
+Watch the complete **Set B — Delivery Risk** project explanation:
+
+[![Watch Video](https://img.shields.io/badge/▶_WATCH_PROJECT_VIDEO-4285F4?style=for-the-badge&logo=googledrive&logoColor=white)](https://drive.google.com/file/d/1R8JtjeztALY47qtXnw8eT15JbjkNLPUJ/view?usp=sharing)
+
+
 
 ## Author
 
