@@ -1,22 +1,22 @@
-# Machine Quality Prediction
+# Delivery Risk Prediction
 
-## Data Science & AI/ML Practical Exam — Set C
+## Data Science & AI/ML Practical Exam — Set c
 
 ### Project Overview
 
-This project focuses on predicting defective production batches and identifying
-operating regimes using Data Science, Machine Learning, Clustering, and
+This project focuses on predicting late deliveries and identifying
+operational segments using Data Science, Machine Learning, Clustering, and
 Artificial Neural Networks.
 
 ## Objective
 
 The main objectives of this project are:
 
-- Predict whether a production batch will be defective.
-- Perform statistical analysis on machine quality data.
+- Predict whether a delivery will be late.
+- Perform statistical analysis on delivery data.
 - Prepare and transform the dataset for modeling.
 - Build a Logistic Regression model.
-- Identify operating regimes using K-Means clustering.
+- Identify operational segments using K-Means clustering.
 - Build an Artificial Neural Network (ANN).
 
 ## Dataset
@@ -24,12 +24,12 @@ The main objectives of this project are:
 The dataset contains the following columns:
 
 - `record_id` — Unique record identifier
-- `temperature` — Synthetic temperature index
-- `vibration` — Synthetic vibration index
-- `pressure` — Synthetic pressure index
-- `hours` — Synthetic operating hours index
+- `distance` — Synthetic distance index
+- `load` — Synthetic load index
+- `traffic` — Synthetic traffic index
+- `staff` — Synthetic staff index
 - `group` — Operational group (G1/G2)
-- `defect` — Target variable (1 = Defect, 0 = No Defect)
+- `late` — Target variable (1 = Late, 0 = Not Late)
 
 The generated dataset contains 305 rows including 5 duplicate rows.
 After removing duplicates, 300 unique records remain.
@@ -39,7 +39,7 @@ After removing duplicates, 300 unique records remain.
 An additional feature is created using:
 
 ```text
-engineered_feature = vibration * pressure
+engineered_feature = load / (staff + 1)
 ```
 
 ## Project Tasks
@@ -74,7 +74,7 @@ engineered_feature = vibration * pressure
 - K-Means Clustering
 - Inertia
 - Silhouette Score
-- Operating Regime Identification
+- Operational Segmentation
 
 ### Task 5 — Artificial Neural Network
 
@@ -118,17 +118,14 @@ Generate the dataset:
 python src/generate_data.py
 ```
 
-Then open and run:
 
-```text
-notebooks/exam.ipynb
-```
+
 
 ## Author
 
 **Name:** Tushar Vala  
 **Student ID:** 10674  
-**Set:** C — Machine Quality
+**Set:** c — Delivery Risk
 
 ## Declaration
 
