@@ -168,7 +168,7 @@ action before the delivery is delayed.
 ## Project Structure
 
 ```text
-ds-aiml-set-b-10674/
+MOCK_TEST_SETC_TUSHAR/
 │
 ├── README.md
 ├── requirements.txt
